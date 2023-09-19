@@ -101,7 +101,7 @@ const Products = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="PRODUCTS -- Outfitify" />
+          <MetaData title="PRODUCTS -- Time Max" />
           <h2 className="productsHeading">Products</h2>
           <div className="pageContainer">
             <div className="filterBox">

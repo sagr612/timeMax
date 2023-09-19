@@ -267,7 +267,7 @@ exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
     const message = " You are banned ";
     await sendEmail({
       email: newUserData.email,
-      subject: `Outfitify`,
+      subject: `Time Max`,
       message,
     });
   }

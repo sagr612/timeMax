@@ -23,7 +23,7 @@ const Search = ({ history }) => {
 
   return (
     <Fragment>
-      <MetaData title="Search A Product -- OUTFITIFY" />
+      <MetaData title="Search A Product -- Time Max" />
       <form className="searchForm" onSubmit={searchSubmitHandler}>
         <AiOutlineCloseCircle className="closeButton" onClick={close} />
         <div className="searchBar">

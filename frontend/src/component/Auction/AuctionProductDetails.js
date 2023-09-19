@@ -105,7 +105,7 @@ const AuctionProductDetails = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title={`${product.name} --Outfitify`} />
+          <MetaData title={`${product.name} --Time Max`} />
           <div className="auctionProductDetails">
             <div>
               <Carousel>

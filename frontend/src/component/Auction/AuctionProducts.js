@@ -59,7 +59,7 @@ const AuctionProducts = ({ match }) => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="AUCTION PRODUCTS -- Outfitify" />
+          <MetaData title="AUCTION PRODUCTS -- Time Max" />
           <h2 className="auctionHeading">Auction Products</h2>
           <div className="auctionContainer">
             <div className="auctionfilterBox">

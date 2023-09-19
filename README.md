@@ -55,4 +55,4 @@ cd frontend && npm start
 
 ## Deployment
 
-Deployment [link](https://time-max-app.onrender.com)
+Deployment [link](https://timemax.onrender.com)

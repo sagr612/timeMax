@@ -17,8 +17,7 @@ import { RiCopperCoinLine } from "react-icons/ri";
 import io from "socket.io-client";
 
 // const socket = io("http://localhost:4000"); //deployed url
-const socket = io("https://time-max-app.onrender.com"); //deployed url
-
+const socket = io("https://timemax.onrender.com"); //deployed url
 
 const AuctionProductDetails = ({ match }) => {
   const dispatch = useDispatch();

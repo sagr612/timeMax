@@ -101,7 +101,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: `Outfitify Password Recovery`,
+      subject: `Time Max Password Recovery`,
       message,
     });
 

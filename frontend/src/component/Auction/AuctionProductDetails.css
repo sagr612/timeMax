@@ -1,0 +1,189 @@
+.auctionProductDetails {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  max-width: 100%;
+  padding: 6vmax;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.auctionProductDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+.auctionProductDetails > div:last-child {
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.CarouselImage {
+  width: 25vmax;
+}
+
+.auction-detailsBlock-1 > h2 {
+  color: #6200ea;
+  font: 700 1.8vmax "Open Sans";
+}
+
+.auction-detailsBlock-1 > p {
+  color: #ac87ec;
+  font: 600 1vmax "Open Sans";
+}
+
+.auction-detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.205); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.205); */
+  width: 70%;
+  padding: 1vmax 0;
+}
+.auction-detailsBlock-2 > span {
+  /* margin: 0.5vmax; */
+  color: #7e57c2;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.auction-detailsBlock-2 > span > svg {
+  margin-left: 0.5vmax;
+}
+.auction-detailsBlock-2 > span:first-child {
+  font: 600 1.2vmax "Open Sans";
+  color: rgb(91, 23, 202);
+}
+
+.auction-detailsBlock-3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  padding: 1vmax 0;
+}
+.auction-detailsBlock-3 > span {
+  color: rgb(91, 23, 202);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.auction-detailsBlock-3 > span:last-child {
+  font: 600 1.2vmax "Open Sans";
+  color: #7e57c2;
+  margin-left: 1vmax;
+}
+
+.auction-detailsBlock-3 {
+  width: 70%;
+}
+.auction-detailsBlock-3 > button {
+  border: none;
+  background: linear-gradient(45deg, #813bf1, #8458e49a);
+  font: 600 1.2vmax "Open Sans";
+  border-radius: 20px;
+  padding: 0.6vmax 2vmax;
+  margin: 1vmax 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+.auction-detailsBlock-3 > button:hover {
+  background: linear-gradient(45deg, #ac58e49a, #f13b81);
+  transform: scale(1.1);
+}
+
+.auction-detailsBlock-4 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.auction-detailsBlock-4 > span {
+  color: rgb(91, 23, 202);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.auction-detailsBlock-4 > input {
+  border: none;
+  padding: 0.5vmax;
+  width: 4vmax;
+  text-align: center;
+  outline: none;
+  font: 600 1.2vmax "Open Sans";
+  color: #512da8;
+  margin-left: 0.5vmax;
+}
+
+.auction-detailsBlock-4 > button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background: linear-gradient(45deg, #813bf1, #8458e49a);
+  font: 600 1.2vmax "Open Sans";
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  margin: 1vmax;
+  outline: none;
+}
+
+.auction-detailsBlock-4 > button:hover {
+  background: linear-gradient(45deg, #ac58e49a, #f13b81);
+}
+
+@media screen and (max-width: 600px) {
+  .auctionProductDetails {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .auctionProductDetails > div:last-child {
+    align-items: center;
+  }
+
+  .auction-detailsBlock-1 > h2 {
+    font-size: 2.8vmax;
+    text-align: center;
+  }
+
+  .auction-detailsBlock-1 > p {
+    text-align: center;
+    font-size: 1vmax;
+  }
+
+  .auction-detailsBlock-2 {
+    justify-content: center;
+  }
+  .detailsBlock-2 > span {
+    font-size: 1.5vmax;
+  }
+  .auction-detailsBlock-3 {
+    justify-content: center;
+  }
+
+  .auction-detailsBlock-4 {
+    justify-content: center;
+  }
+}

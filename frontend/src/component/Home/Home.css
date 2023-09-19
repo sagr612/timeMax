@@ -1,0 +1,115 @@
+.carousel-slide {
+  height: 100vmin;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: 100%;
+}
+.links {
+  text-decoration: none;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+}
+.carousel * {
+  box-sizing: border-box;
+}
+.links > button {
+  margin-left: 1.5rem;
+  cursor: pointer;
+  background-color: #b5aeae;
+  outline: none;
+  border-radius: 0.6vmax;
+  padding: 0.6vmax;
+  transition: all 0.5s;
+  /* width: 9vmax; */
+  font: 700 1.3vmax "Roboto";
+  border: none;
+  justify-content: center;
+  display: flex;
+  padding: 1vmax;
+  text-transform: capitalize;
+}
+.links > button:hover {
+  background-color: rgba(136, 132, 136, 0.795);
+  color: white;
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 4vmax;
+  border-bottom: 0.2vmax solid rgba(21, 21, 21, 0.5);
+  width: 40vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 15vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  border: 2px solid rgba(196, 188, 188, 0.205);
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.productCard > img {
+  width: 15vmax;
+}
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productCard .MuiRating-icon {
+  font-size: 2vmax;
+}
+
+.productCardSpan {
+  margin: 0vmax;
+  font: 800 1vmax "Open Sans";
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: rgb(91, 23, 202);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}

@@ -1,0 +1,147 @@
+.auctionHeading {
+  margin: 2vmax auto;
+  padding: 2vmax;
+  color: #ab47bc;
+  font: 700 3vmax "Montserrat";
+  text-align: center;
+}
+
+.auctionContainer {
+  display: flex;
+}
+
+.auctions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 50vh;
+  width: 80%;
+  /* margin-left: 4vmax; */
+}
+
+.auctionfilterBox {
+  margin-left: 3vmax;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30%;
+  /* width: 20%; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vmax;
+}
+.auctionfilterBox > div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.3vmax;
+  margin-top: 1vmax;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.auctionfilterBox > div > label {
+  display: flex;
+  margin: 1vmax;
+  font: 600 1.3vmax "Roboto";
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heading {
+  font: 600 1.6vmax "Montserrat";
+  color: #d249eee3;
+}
+.radio-input {
+  margin-right: 0.8vmax;
+  outline: none;
+  accent-color: rgb(240, 74, 240);
+  border: none;
+  width: 1.3vmax;
+  height: 1.3vmax;
+}
+.auctioncategoryBox {
+  padding: 0%;
+  margin-top: 1vmax;
+}
+
+.auctioncategory-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  color: rgb(80, 80, 80);
+  font: 600 1.3vmax "Roboto";
+  margin: 0.6vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.auctioncategory-link:hover {
+  color: #e30ef7;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  color: #8a2be2;
+  font: 600 1.2vmax "Open Sans";
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: #8a2be2;
+  color: aliceblue;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .auctionContainer {
+    flex-direction: column;
+  }
+  .auctionfilterBox {
+    display: flex;
+    /* flex-direction: row; */
+    /* margin-left: 1vmax; */
+    /* width: 100%; */
+    /* position: sticky; */
+    /* justify-content: space-around; */
+  }
+  .auctionfilterBox > div {
+    width: 80vw;
+  }
+}

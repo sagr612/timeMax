@@ -1,0 +1,166 @@
+.newProductContainer {
+  width: 100%;
+  height: fit-content;
+  /* position: fixed; */
+  /* top: 0%; */
+  /* left: 0; */
+  padding: 2vmax;
+  background: whitesmoke;
+
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3vmax;
+  margin-bottom: 1vmax;
+}
+
+/* Form styles */
+.createProductForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmax;
+  background-color: white;
+
+  border-radius: 5px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+.createProductForm div {
+  position: relative;
+  margin-bottom: 2.2vmax;
+}
+
+.createProductForm div svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  fill: #999;
+  pointer-events: none;
+}
+
+/* Input and select styles */
+.createProductForm input[type="text"],
+.createProductForm input[type="email"],
+.createProductForm input[type="number"],
+.createProductForm input[type="datetime-local"],
+.createProductForm textarea,
+.createProductForm select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5vmax;
+  font-family: "Open Sans";
+  padding-left: 4vmax;
+  box-sizing: border-box;
+}
+.createProductForm > button {
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, #813bf1, #8458e49a);
+}
+.createProductForm > button:hover {
+  background: linear-gradient(45deg, #ac58e49a, #f13b81);
+}
+.createProductForm select {
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath d='M7.293 10.293a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L8 11.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 010-1.414z'/%3E%3C/svg%3E")
+    no-repeat right 10px center/15px 15px;
+}
+
+/* Image preview styles */
+#createProductFormImage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmax;
+}
+
+#createProductFormImage img {
+  max-width: 100px;
+  max-height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.selectedImageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.clearImageButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 5px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Roboto";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0.5vmax;
+}
+
+#createProductFormFile > input {
+  display: flex;
+  width: 100%;
+  font: 600 1.5vmax "Open Sans";
+  box-sizing: border-box;
+}
+#createProductFormFile > input::file-selector-button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font: 600 1.5vmax "Open Sans";
+  color: #8a2be2;
+  background-color: white;
+
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+#createProductFormFile > input::file-selector-button:hover {
+  background-color: lightgray;
+}
+
+#createProductBtn {
+  background-color: #8a2be2;
+  color: white;
+  width: 100%;
+  font-size: 2vmax;
+  font-family: "Montserrat";
+  border: none;
+  padding: 0.8vmax;
+  font-weight: bold;
+}
+#createProductBtn:hover {
+  background-color: #760fd6b4;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .newProductContainer {
+    max-width: 100%;
+    /* padding: 0; */
+  }
+
+  .createProductForm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .createProductForm div {
+    /* margin-bottom: 10px; */
+  }
+
+  /* Adjust input/select styles as needed for smaller screens */
+}

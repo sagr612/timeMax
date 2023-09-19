@@ -1,0 +1,80 @@
+.searchForm {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  background: linear-gradient(45deg, lightgray, rgb(204, 201, 201), white);
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+.closeButton {
+  position: fixed;
+  color: black;
+  top: 2vmax;
+  left: 2vmax;
+  font-size: 3vmax;
+}
+.closeButton:hover {
+  color: grey;
+}
+.searchBar {
+  border: 1px solid rgba(14, 13, 13, 0.226);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 5vmax;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+  margin-top: 6vmax;
+}
+
+.searchBar > input {
+  padding: 1.5vmax;
+  border: none;
+  outline: none;
+  width: 80%;
+  font: 500 2vmax "Open Sans";
+}
+
+.searchBar > button {
+  border: none;
+  outline: none;
+  width: 20%;
+  color: white;
+
+  background: linear-gradient(45deg, #8233cb 30%, #631df1 90%);
+  /* border-radius: ; */
+}
+.searchBar > button:hover {
+  background: linear-gradient(45deg, #b933cb 30%, #b298e7 90%);
+}
+.searchBar > button > svg {
+  border: none;
+  outline: none;
+  font-size: 3vmax;
+  /* padding: 1.5vmax; */
+}
+
+.radio-buttons {
+  /* border: 1px solid rgba(14, 13, 13, 0.226); */
+  margin-top: 2.5vmax;
+  font: 600 2vmax "Open Sans";
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2vmax;
+}
+.radio-input {
+  margin-right: 0.8vmax;
+  outline: none;
+  accent-color: rgb(124, 74, 240) !important;
+  border: none;
+  width: 1.5vmax !important;
+  height: 1.5vmax !important;
+}

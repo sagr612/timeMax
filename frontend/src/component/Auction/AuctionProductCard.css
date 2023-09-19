@@ -1,0 +1,54 @@
+.auctionCard {
+  width: 15vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  border: 2px solid rgba(196, 188, 188, 0.205);
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.auctionCard > img {
+  width: 15vmax;
+}
+.auctionCard > p {
+  font-family: "Open Sans";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.auctionCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+.auctionCard > span {
+  margin: 0.5vmax;
+  color: rgb(91, 23, 202);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.auctionCard > span > svg {
+  margin-left: 0.5vmax;
+}
+.timeLeft {
+  display: flex;
+  flex-wrap: wrap;
+  font: bold 1.2vmax "Open Sans";
+  justify-content: space-between;
+  color: rgb(91, 23, 202);
+  box-sizing: border-box;
+  margin: 0.5vmax;
+}

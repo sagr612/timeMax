@@ -1,0 +1,81 @@
+.dashboardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #8a2be2; */
+}
+.dashboardContainer > h1 {
+  color: #8a2be2;
+  font-size: 4vmax;
+  font-family: "Montserrat";
+  border-bottom: 2px solid #8a2be2;
+}
+
+.Summary {
+  margin: 1vmax;
+  width: 100%;
+}
+
+.Summary1 {
+  background-color: #8f35e4e0;
+  color: white;
+  font: 600 2.5vmax "Open Sans";
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Summary2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 2vmax;
+}
+
+.Summary2 > a {
+  text-decoration: none;
+  font: 700 2vmax "Open Sans";
+  padding: 1rem;
+  color: white;
+  background-color: #35b715db;
+  border-radius: 10%;
+  margin: 1vmax;
+}
+
+.Summary2 > a:first-child {
+  color: white;
+  background-color: #37abf2;
+}
+.colorChange {
+  color: white !important ;
+  background-color: rgba(232, 31, 163, 0.86) !important ;
+}
+
+.Summary2 > a:last-child {
+  color: white;
+  background-color: rgb(225, 68, 40);
+}
+
+.charts {
+  display: flex;
+  flex-wrap: on;
+  /* border: 1px solid red; */
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+}
+
+.lineChart {
+  width: 80%;
+  margin: auto;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+}

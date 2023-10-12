@@ -80,7 +80,7 @@ exports.getAllAuctionProducts = catchAsyncErrors(async (req, res, next) => {
   } else if (flag == "previous") {
     query = { isAuction: "Yes", auctionEndTime: { $lt: currentTime } };
   } else {
-    // query = { isAuction: "Yes" };
+    query = { isAuction: "Yes" };
   }
 
   console.log(query);
